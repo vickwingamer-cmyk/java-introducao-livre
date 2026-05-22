@@ -65,12 +65,15 @@ public class PraticaPOO {
         aluno2.apresentar();
 
         //  objeto conta
-        Conta conta1 = new Conta();
+        Conta conta = new Conta();
 
         //  saldo inicial
-        conta1.titular="Vick";
-        conta1.depositar(50);
+        conta.setSaldo(100);
 
-        System.out.println("Saldo atual: " + conta1.getSaldo());
+        // depositando valor na conta
+        conta.depositar(50);
+
+        // exibindo saldo final
+        System.out.println("Saldo atual: " + conta.getSaldo());
     }
 }
