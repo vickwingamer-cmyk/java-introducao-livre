@@ -26,7 +26,9 @@ public class Main {
         for (Funcionario f : funcionarios) {
 
             System.out.println("Funcionário: " + f.nome);
+			System.out.println("Salario total: " + f.salario());
             System.out.println("Bônus: " + f.calcularBonus());
+			System.out.println("Bônus: " + (f.salario + f.calcularBonus());
             System.out.println("----------------");
         }
     }
